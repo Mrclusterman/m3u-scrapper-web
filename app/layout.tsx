@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
 	title: "Acestream Links Converter",
 	description:
-		"Easily convert your Acestream links to a compatible M3U playlist file",
+		"Easily convert your Acestream links to a compatible M3U playlist file made by Mr. Clusterman",
 };
 
 export default function RootLayout({
