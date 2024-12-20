@@ -85,6 +85,4 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 Created by Mr. Clusterman
 
-## License
 
-Please add appropriate license information here.
