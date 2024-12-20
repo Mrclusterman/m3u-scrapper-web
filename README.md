@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Acestream Links Converter
 
-## Getting Started
+A web application that converts Acestream links into M3U playlist format for easy importing into media players.
 
-First, run the development server:
+## Description
 
+This application provides a simple and efficient way to convert Acestream links into M3U playlist files. Users can input a URL containing Acestream links, and the application will generate a compatible M3U playlist file that can be used with various media players.
+
+## Technologies Used
+
+- **Next.js** - React framework for the frontend application
+- **React** - JavaScript library for building the user interface
+- **Tailwind CSS** - Utility-first CSS framework for styling
+- **Lucide React** - Icon library for the UI elements
+- **TypeScript** (implied by the Next.js configuration)
+
+## Features
+
+- URL input for pages containing Acestream links
+- Automatic conversion to M3U format
+- Downloadable playlist file
+- Responsive design for both desktop and mobile devices
+- Modern gradient UI with a clean interface
+
+## Installation
+
+1. Clone the repository:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone [repository-url]
+cd acestream-links-converter
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Build for production:
+```bash
+npm run build
+```
 
-## Learn More
+5. Start the production server:
+```bash
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Usage
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Navigate to the application in your web browser
+2. Enter the URL of the page containing Acestream links in the input field
+3. Click the "Download M3U" button
+4. Import the downloaded .m3u file into your preferred media player
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+The application follows the standard Next.js 13+ file structure with app directory:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+├── app/
+│   ├── page.tsx (main page component)
+│   └── layout.tsx
+├── public/
+│   └── favicon.ico
+├── components/
+│   └── ui/ (shadcn/ui components)
+└── styles/
+    └── globals.css (Tailwind CSS styles)
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Configuration
+
+The application is configured to run with a base path of `/m3u-scrapper-web/` as shown in the deployment configuration.
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## Author
+
+Created by Mr. Clusterman
+
+## License
+
+Please add appropriate license information here.
